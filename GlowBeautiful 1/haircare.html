@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GlowBeauty – Honest Beauty Reviews & Buying Guide</title>
+
+<meta name="description" content="Honest beauty product reviews, comparisons & best picks to help you choose wisely.">
+<meta name="robots" content="index, follow">
+
+<style>
+:root{
+--pink:#ff4d6d;
+--dark:#c9184a;
+--bg:#fff0f3;
+--text:#333;
+--white:#fff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+}
+
+/* ================= HEADER ================= */
+header{
+background:#fff;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+color:var(--pink);
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+nav ul li{
+position:relative;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+nav ul li:hover ul{
+display:block;
+}
+
+nav ul ul{
+display:none;
+position:absolute;
+top:25px;
+left:0;
+background:#fff;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+min-width:180px;
+}
+
+nav ul ul li{
+padding:10px;
+}
+
+/* ================= TITLE ================= */
+.section-title{
+text-align:center;
+color:var(--dark);
+margin:40px 0 30px;
+}
+
+/* ================= PRODUCT LIST ================= */
+.product-list{
+max-width:900px;
+margin:0 auto 60px;
+display:flex;
+flex-direction:column;     /* 🔥 ONE BELOW ANOTHER */
+gap:35px;                  /* spacing between cards */
+padding:0 15px;
+}
+
+/* ================= CARD ================= */
+.card{
+background:#fff;
+border-radius:18px;
+padding:25px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+/* ================= IMAGE ================= */
+.product-img{
+height:320px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:15px;
+}
+
+.product-img img{
+max-height:100%;
+max-width:100%;
+object-fit:contain;
+filter:drop-shadow(0 12px 20px rgba(0,0,0,.15));
+}
+
+/* ================= CARD BODY ================= */
+.card-body h3{
+margin-bottom:10px;
+}
+
+.card-body p{
+font-size:14px;
+margin-bottom:12px;
+}
+
+/* ================= BUTTON ================= */
+.buy-btn{
+display:inline-block;
+background:var(--pink);
+color:#fff;
+padding:10px 22px;
+border-radius:25px;
+text-decoration:none;
+font-weight:600;
+}
+
+.buy-btn:hover{
+background:var(--dark);
+}
+
+/* ================= WHY POPUP ================= */
+.why-wrap{
+position:relative;
+display:inline-block;
+margin-top:12px;
+}
+
+.why-trigger{
+font-size:13px;
+color:var(--pink);
+font-weight:600;
+cursor:pointer;
+border-bottom:1px dashed var(--pink);
+}
+
+.why-popup{
+position:absolute;
+bottom:130%;
+left:0;
+background:#fff;
+width:260px;
+padding:14px 16px;
+border-radius:14px;
+box-shadow:0 12px 30px rgba(0,0,0,.18);
+opacity:0;
+visibility:hidden;
+transform:translateY(10px);
+transition:.25s ease;
+z-index:20;
+}
+
+.why-popup ul{
+padding-left:16px;
+font-size:13px;
+}
+
+.why-popup li{
+margin-bottom:6px;
+}
+
+.why-wrap:hover .why-popup{
+opacity:1;
+visibility:visible;
+transform:translateY(0);
+}
+
+/* ================= FOOTER ================= */
+footer{
+background:#333;
+color:#fff;
+text-align:center;
+padding:30px;
+font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">GlowBeauty</div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">Categories ▾</a>
+        <ul>
+          <li><a href="skincare.html">Top 10 Skincare 2026</a></li>
+          <li><a href="haircare.html">Top 10 Hair / Beard care 2026</a></li>
+          <li><a href="makeup.html">Makeup</a></li>
+          <li><a href="Personal- Care.html">Personal Care</a></li>
+        </ul>
+      </li>
+      <li><a href="review.html">Reviews</a></li>
+    </ul>
+  </nav>
+</header>
+
+<h2 class="section-title">TOP 5 HAIRCARE PRODUCTS (2025–2026)</h2>
+
+<div class="product-list">
+
+  <!-- PRODUCT CARD -->
+  <div class="card">
+    <div class="product-img">
+<img src="images/minimalist18% hair.jpg" alt="Minimalist Hair Growth Serum">
+    </div>
+
+    <div class="card-body">
+      <h3>Minimalist Hair Growth Serum With 3% Redensyl</h3>
+      <p>
+       Minimalist Hair Growth Serum With 3% Redensyl, 3% Anagain, 3% Procapil, 5% Capixyl & 4% Baicapil 18% Hair Growth Actives | For Hair Fall Control | For Men & Women | 60 ml
+
+      </p>
+
+      <a href="https://amzn.to/4qqQpCk" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+
+      <div class="why-wrap">
+        <span class="why-trigger">Why we recommend?</span>
+        <div class="why-popup">
+         <ul>
+  <li>Advanced multi-functional hair growth serum powered with <strong>5 proven ingredients</strong> in one formula.</li>
+
+  <li>Contains <strong>Capixyl 5%</strong>, <strong>Redensyl 3%</strong>, <strong>Procapil 3%</strong>, <strong>Anagain 3%</strong>, and <strong>Baicapil 4%</strong> to support healthier hair growth.</li>
+
+  <li>Helps reduce hair fall and supports stronger, thicker-looking hair with regular use.</li>
+
+  <li>Works on multiple hair concerns by targeting hair roots and scalp health.</li>
+
+  <li>Visible reduction in hair fall can be noticed from the 4th week of consistent use.</li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+     <img src="images/wow.jpg" alt="WOW Skin Science Onion + Collagen Anti-Hairfall Shampoo">
+    </div>
+
+    <div class="card-body">
+      <h3>WOW Skin Science Onion + Collagen Anti-Hairfall Shampoo</h3>
+      <p>
+        WOW Skin Science Onion + Collagen Anti-Hairfall Shampoo| Controls Hair fall | Helps Strengthen Hair | No Sulphate No Paraben | For Men & Women - 1ltr
+        </p>
+
+
+      <a href="https://amzn.to/4q8Sylr" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a> <div class="why-wrap"> <span class="why-trigger">Why we recommend?</span>
+        <div class="why-popup">
+        <ul>
+  <li>Onion-rich formula with natural sulphur helps strengthen hair from the roots and reduce hair fall.</li>
+
+  <li>Enriched with <strong>Collagen</strong> to help protect hair strands and minimise breakage.</li>
+
+  <li>Supports thicker-looking hair by strengthening the keratin structure of the hair.</li>
+
+  <li>Gently cleanses the scalp, removes buildup, and promotes healthier-looking roots.</li>
+
+  <li>Improves hair hydration and helps prevent dryness and breakage.</li>
+
+  <li>Adds shine and smoothness to dull, fragile hair with regular use.</li>
+</ul>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/sudha.jpg" alt="Shudhअ Herbal Hair Oil ">
+    </div>
+
+    <div class="card-body">
+      <h3>Shudhअ Herbal Hair Oil </h3>
+      <p>
+        Shudhअ Herbal Hair Oil for Growth & Hair Fall Control (Rosemarry&fenugreek)
+
+      </p>
+
+      <a href="https://amzn.to/4pL2FfN" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+      <div class="why-wrap"> <span class="why-trigger">Why we recommend?</span>
+        <div class="why-popup">
+        <ul>
+  <li>Herbal hair oil with a <strong>natural coconut oil base</strong> that nourishes hair from roots to tips.</li>
+
+  <li>Supports healthy hair growth and helps strengthen hair follicles for thicker-looking hair.</li>
+
+  <li>Helps reduce hair fall and breakage while improving overall hair strength.</li>
+
+  <li>Infused with natural herbal extracts to condition, soften, and revitalise hair.</li>
+
+  <li>Leaves hair smooth, manageable, and healthier-looking with regular use.</li>
+
+  <li>Comes in a convenient <strong>100 ml</strong> bottle suitable for regular, long-term use.</li>
+</ul>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/lorial.jpg"  alt=" L'Oreal Paris Extraordinary Oil Hair Serum">
+    </div>
+
+    <div class="card-body">
+      <h3> L'Oreal Paris Extraordinary Oil Hair Serum</h3>
+      <p>
+       L'Oreal Paris Extraordinary Oil Hair Serum Powered by Floral Oils for All Hair Types, Volume- 100 ml, Makes hair frizz-free, stronger, shiny and provides UV and Heat Protection, Lightweight Formula
+
+      </p>
+
+      <a href="https://amzn.to/4bIzpmw" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+            <div class="why-wrap"> <span class="why-trigger">Why we recommend?</span>
+        <div class="why-popup">
+       <ul>
+  <li>Lightweight, grease-free hair serum designed for dry, frizzy, and flyaway hair.</li>
+
+  <li>Multi-use formula that helps add shine, hydration, and smoothness for more manageable hair.</li>
+
+  <li>Infused with <strong>6 rare flower oils</strong> including Lotus, Chamomile, Flax, Tiare, Rose, and Sunflower.</li>
+
+  <li>Helps tame unruly strands and improve hair softness and silkiness.</li>
+
+  <li>Provides heat protection up to <strong>230°C</strong>, making it suitable for styling.</li>
+
+  <li>Leaves hair free-flowing, nourished, and glossy without weighing it down.</li>
+</ul>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/bare.jpg" alt="Bare Anatomy Advanced Hair Growth Serum">
+    </div>
+
+    <div class="card-body">
+      <h3>Bare Anatomy Advanced Hair Growth Serum</h3>
+      <p>
+        Bare Anatomy Advanced Hair Growth Serum | 3% Redensyl, 4% Anagain, 3% Baicapil, 1% Capilia Longa, Rosemary, Biotin & Rice Water | Controls Hair Fall & Supports Hair Density | for Women & Men | 20ml
+
+      </p>
+
+      <a href="https://amzn.to/4qwUk0m" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+              <div class="why-wrap"> <span class="why-trigger">Why we recommend?</span>
+        <div class="why-popup">
+       <ul>
+  <li><strong>97% Observed Hair Density in 45 Days*</strong> – Clinically formulated hair growth serum with Redensyl, Anagain, Baicapil & Capilia Longa, enriched with Rosemary, Biotin & Rice Extract to boost hair density and restart the hair growth cycle.</li>
+
+  <li><strong>Up to 89% Hair Loss Reduction**</strong> – Powered with 3% Baicapil, 1% Capilia Longa & Rosemary to reduce hair breakage and hair fall by strengthening keratin structure and improving hair elasticity.</li>
+
+  <li><strong>Clinical Hair Growth Actives</strong> – Advanced blend of 3% Redensyl, 4% Anagain, 3% Baicapil & 1% Capilia Longa helps stimulate hair growth by extending the anagen (growth) phase.</li>
+
+  <li><strong>Natural Hair Growth Ingredients</strong> – Rosemary, Biotin & Rice Extract strengthen weak hair, reduce dryness, prevent breakage, and support healthy hair growth.</li>
+
+  <li><strong>Non-Greasy & Fast Absorbing</strong> – Lightweight, non-sticky formula absorbs easily without leaving hair greasy, making it suitable for use anytime.</li>
+</ul>
+
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+ 
+  <h2 class="section-title">TOP 5 BEARDCARE PRODUCTS (2025–2026)</h2>
+
+
+  <!-- DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/battel000.jpg" alt="Battle Cry Beard Growth Serum ">
+    </div>
+
+    <div class="card-body">
+      <h3>Battle Cry Beard Growth Serum </h3>
+      <p>
+        Battle Cry Beard Growth Serum – Daily Use – Softens, Smooths & Nourishes Beard – Adds Shine – Reduces Patchiness – Hydrates – Lightweight Formula – 30 ml
+
+      </p>
+
+      <a href="https://amzn.to/45q6Feu" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+                    <div class="why-wrap"> <span class="why-trigger">Why we recommend?</span>
+        <div class="why-popup">
+<ul>
+  <li><strong>Daily Use Beard Serum (30 ml)</strong> – Lightweight beard growth serum for everyday grooming. Absorbs quickly without oiliness or residue and helps promote healthy, thicker beard growth when used twice daily.</li>
+
+  <li><strong>Softens & Smoothens Rough Beard</strong> – Instantly softens rough, stiff beard hair and improves texture, giving a calm, well-groomed and easy-to-style appearance without heavy wax or stickiness.</li>
+
+  <li><strong>Nourishing & Strengthening Formula</strong> – Enriched with vitamins and antioxidants that penetrate deep to nourish beard roots and strands, strengthening weak hair and reducing brittleness and thinning.</li>
+
+  <li><strong>Natural Shine & Groomed Finish</strong> – Adds a healthy, natural shine without making the beard greasy or heavy, keeping it fresh, clean and polished throughout the day.</li>
+
+  <li><strong>Helps Reduce Patchiness Over Time</strong> – Supports density in patchy areas by nourishing hair follicles, gradually improving beard volume and evenness for a fuller, thicker-looking beard.</li>
+</ul>
+
+
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/reginaldmen.jpg"alt="Reginald Men Hermes ">
+    </div>
+
+    <div class="card-body">
+      <h3>Reginald Men Hermes </h3>
+      <p>
+       Reginald Men Hermes | All-in-One Serum for Skin & Beard Health | Multi-Functional Face & Beard Care | Hydrates, Nourishes & Strengthens | Clinically Proven Formula for Clear, Healthy Skin & Beard
+
+      </p>
+
+      <a href="https://amzn.to/4qGAdNk" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+
+                    <div class="why-wrap"> <span class="why-trigger">Why we recommend?</span>
+        <div class="why-popup">
+<ul>
+  <li><strong>Complete Skin & Beard Solution:</strong> Dual-action all-in-one serum that nourishes both facial skin and beard follicles, eliminating the need for separate products and simplifying daily grooming.</li>
+
+  <li><strong>Growth & Strength Enhancement:</strong> Enriched with essential vitamins and bioactive compounds to strengthen beard roots, reduce breakage, improve density, and promote healthier, fuller beard growth.</li>
+
+  <li><strong>Skin Clearing Technology:</strong> Helps prevent ingrown hairs, irritation, and blemishes. Anti-inflammatory and antibacterial ingredients soothe skin, control excess oil, and reduce beard-area acne.</li>
+
+  <li><strong>Clinically Validated Performance:</strong> Dermatologist-tested formula proven to improve beard manageability, reduce irritation, and enhance skin clarity. Suitable for all skin types and beard textures.</li>
+</ul>
+
+ </div>
+  </div>
+    </div>
+  </div>
+
+  <!-- DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/sheopals.jpg" alt="Sheopals Beard Growth Serum for Men with 3X Redensyl ">
+    </div>
+
+    <div class="card-body">
+      <h3>Sheopals Beard Growth Serum for Men with 3X Redensyl </h3>
+      <p>
+       Sheopals Beard Growth Serum for Men with 3X Redensyl – Fast Beard Growth Serum for Thicker, Fuller & Patchy Beard – Non-Sticky Formula – 35ml
+
+      </p>
+
+      <a href="https://amzn.to/3ZzdaIp" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+                    <div class="why-wrap"> <span class="why-trigger">Why we recommend?</span>
+        <div class="why-popup">
+<ul>
+  <li><strong>3X Redensyl Growth Formula:</strong> Activates dormant hair follicles by targeting ORSc and bulge stem cells, pushing inactive follicles into the growth (anagen) phase. Clinically proven to increase hair density with up to 28,200 new hairs in 84 days.</li>
+
+  <li><strong>Reduces Hair Loss & Breakage:</strong> Powerful antioxidant and anti-inflammatory action minimizes oxidative stress on hair follicles, helping control hair fall and beard thinning.</li>
+
+  <li><strong>Watercress Nutrient Boost:</strong> Rich in Vitamins A, C & E for healthy skin and scalp, Zinc & Iron for stronger keratin production, and Biotin (Vitamin B7) to support faster hair regeneration.</li>
+
+  <li><strong>Stops Hair Fall & Beard Thinning:</strong> Saw Palmetto helps block DHT—the main hormone responsible for male pattern baldness and patchy beard growth—while Redensyl + Biotin reduce excessive shedding.</li>
+
+  <li><strong>Reduces Patchiness:</strong> Targets weak, uneven beard areas and promotes uniform growth across beard edges and sparse zones.</li>
+
+  <li><strong>Fights Dandruff & Itchiness:</strong> Natural antimicrobial and antifungal properties soothe scalp and beard itch, reduce flakiness, and control dandruff and beardruff.</li>
+
+  <li><strong>Non-Sticky & Lightweight:</strong> Fast-absorbing serum that leaves no greasy residue, making it suitable for daily use.</li>
+
+  <li><strong>Powered by Redensyl & Biotin:</strong> Clinically shown to improve hair and beard density with visible results in as little as 6 weeks.</li>
+</ul> </div>
+  </div>
+    </div>
+  </div>
+
+  <!-- DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/sheopals.jpg" alt="BEARD BROTHERS Alpha Beard oil for men Fast growth">
+    </div>
+
+    <div class="card-body">
+      <h3>BEARD BROTHERS Alpha Beard oil for men Fast growth</h3>
+      <p>
+        BEARD BROTHERS Alpha Beard oil for men Fast growth and Mustache Growth with Almond Jojoba and Natural Oils Non-Greasy Hair Serum for Thick Soft Beard Hydration Shine (30 ml) (Pack of 1)
+
+      </p>
+
+      <a href="https://amzn.to/49Z4QXl" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>      
+       <div class="why-wrap"> <span class="why-trigger">Why we recommend?</span>
+        <div class="why-popup">
+<ul>
+  <li><strong>Beard Growth Oil for Thicker, Fuller Beard:</strong> Enriched with Argan oil, Pumpkin Seed oil, and Hibiscus extract to nourish follicles, reduce patchy areas, and promote faster, thicker beard growth. Ideal for daily beard care and grooming.</li>
+
+  <li><strong>Natural Ingredients Blend:</strong> Crafted with Jojoba, Almond, Argan, Lavender, Pumpkin Seed, Hibiscus, Castor, Coconut, Rosemary, Eucalyptus, Amla, Apricot Kernel, and Mustard Seed oils for deep hydration, softness, and healthy beard growth.</li>
+
+  <li><strong>100% Natural & Safe Formula:</strong> Free from harmful chemicals and enriched with Grapeseed, Avocado, Amla, and Mustard Seed oils. Suitable for all beard types and effective for patchy beard care and beard dandruff control.</li>
+
+  <li><strong>Strengthens & Repairs Beard Hair:</strong> Lavender, Argan, and Pumpkin Seed oils help strengthen brittle strands, prevent split ends, improve texture, and support long-term beard health and styling.</li>
+
+  <li><strong>Non-Greasy & Fast-Absorbing:</strong> Lightweight formula absorbs quickly without leaving a greasy residue. Infused with Lavender and Hibiscus for a refreshing, masculine fragrance—perfect for daily use.</li>
+
+  <li><strong>Complete Beard Care Solution:</strong> Works as a beard growth serum, beard softener, beard moisturizer, and beard dandruff treatment, ensuring healthier, thicker, and well-groomed beard growth.</li>
+</ul>
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <!-- DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/manmatter.jpg" alt="Man Matters Advanced Beard&Hair Serum ">
+    </div>
+
+    <div class="card-body">
+      <h3>Man Matters Advanced Beard&Hair Serum </h3>
+      <p>
+        Man Matters Advanced Beard&Hair Serum Roll On 25Ml With Derma Roller 0.5 Mm|Redensyl,Anagain,Aminexil&Rosemary|Reactivates Hair Cells,Improves Beard&Hair Density&Promotes Thicker Growth, 50 Grams
+
+      </p>
+
+      <a href="https://amzn.to/4rkX01s" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+            <div class="why-wrap"> <span class="why-trigger">Why we recommend?</span>
+        <div class="why-popup">
+<ul>
+  <li><strong>3% Redensyl:</strong> Helps regenerate hair follicles and supports new hair growth by activating dormant follicles.</li>
+
+  <li><strong>3% Procapil:</strong> Reduces the effects of DHT, helping control hair fall and beard thinning.</li>
+
+  <li><strong>2% Anagain:</strong> Improves hair density by stimulating hair growth at the root level.</li>
+
+  <li><strong>1% Aminexil:</strong> Strengthens hair roots and promotes healthier, longer-lasting hair growth.</li>
+
+  <li><strong>Micro-Needle Technology:</strong> Enhances absorption of active ingredients for faster and more effective results.</li>
+</ul>
+    </div>
+  </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+<footer>
+<p>GlowBeauty © 2025 | Honest Beauty Reviews & Buying Guide</p>
+</footer>
+
+</body>
+</html>

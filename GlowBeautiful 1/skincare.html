@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GlowBeauty – Honest Beauty Reviews & Buying Guide</title>
+
+<meta name="description" content="Honest beauty product reviews, comparisons & best picks to help you choose wisely.">
+<meta name="robots" content="index, follow">
+
+<style>
+:root{
+--pink:#ff4d6d;
+--dark:#c9184a;
+--bg:#fff0f3;
+--text:#333;
+--white:#fff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+}
+
+/* ================= HEADER ================= */
+header{
+background:#fff;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+color:var(--pink);
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+nav ul li{
+position:relative;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+nav ul li:hover ul{
+display:block;
+}
+
+nav ul ul{
+display:none;
+position:absolute;
+top:25px;
+left:0;
+background:#fff;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+min-width:180px;
+}
+
+nav ul ul li{
+padding:10px;
+}
+
+/* ================= TITLE ================= */
+.section-title{
+text-align:center;
+color:var(--dark);
+margin:40px 0 30px;
+}
+
+/* ================= PRODUCT LIST ================= */
+.product-list{
+max-width:900px;
+margin:0 auto 60px;
+display:flex;
+flex-direction:column;     /* 🔥 ONE BELOW ANOTHER */
+gap:35px;                  /* spacing between cards */
+padding:0 15px;
+}
+
+/* ================= CARD ================= */
+.card{
+background:#fff;
+border-radius:18px;
+padding:25px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+/* ================= IMAGE ================= */
+.product-img{
+height:320px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:15px;
+}
+
+.product-img img{
+max-height:100%;
+max-width:100%;
+object-fit:contain;
+filter:drop-shadow(0 12px 20px rgba(0,0,0,.15));
+}
+
+/* ================= CARD BODY ================= */
+.card-body h3{
+margin-bottom:10px;
+}
+
+.card-body p{
+font-size:14px;
+margin-bottom:12px;
+}
+
+/* ================= BUTTON ================= */
+.buy-btn{
+display:inline-block;
+background:var(--pink);
+color:#fff;
+padding:10px 22px;
+border-radius:25px;
+text-decoration:none;
+font-weight:600;
+}
+
+.buy-btn:hover{
+background:var(--dark);
+}
+
+/* ================= WHY POPUP ================= */
+.why-wrap{
+position:relative;
+display:inline-block;
+margin-top:12px;
+}
+
+.why-trigger{
+font-size:13px;
+color:var(--pink);
+font-weight:600;
+cursor:pointer;
+border-bottom:1px dashed var(--pink);
+}
+
+.why-popup{
+position:absolute;
+bottom:130%;
+left:0;
+background:#fff;
+width:260px;
+padding:14px 16px;
+border-radius:14px;
+box-shadow:0 12px 30px rgba(0,0,0,.18);
+opacity:0;
+visibility:hidden;
+transform:translateY(10px);
+transition:.25s ease;
+z-index:20;
+}
+
+.why-popup ul{
+padding-left:16px;
+font-size:13px;
+}
+
+.why-popup li{
+margin-bottom:6px;
+}
+
+.why-wrap:hover .why-popup{
+opacity:1;
+visibility:visible;
+transform:translateY(0);
+}
+
+/* ================= FOOTER ================= */
+footer{
+background:#333;
+color:#fff;
+text-align:center;
+padding:30px;
+font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">GlowBeauty</div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">Categories ▾</a>
+        <ul>
+          <li><a href="skincare.html">Top 10 Skincare 2026</a></li>
+          <li><a href="haircare.html">Top 10 Haircare 2026</a></li>
+          <li><a href="makeup.html">Makeup</a></li>
+          <li><a href="Personal- Care.html">Personal Care</a></li>
+        </ul>
+      </li>
+      <li><a href="review.html">Reviews</a></li>
+    </ul>
+  </nav>
+</header>
+
+<h2 class="section-title">TOP 10 SKINCARE PRODUCTS (2025–2026)</h2>
+
+<div class="product-list">
+
+  <!--2 PRODUCT CARD -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/minimalistoil.jpg"alt="Minimalist Oil Control & Anti-Acne 10% ">
+    </div>
+
+    <div class="card-body">
+      <h3>Minimalist Oil Control & Anti-Acne 10%</h3>
+      <p>
+        Niacinamide Face Serum with Zinc | Controls oil, reduces acne marks
+        & minimizes pores | 10 ml
+      </p>
+
+      <a href="https://amzn.to/4qpxXKg" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+
+      <div class="why-wrap">
+        <span class="why-trigger">Why we recommend?</span>
+        <div class="why-popup">
+          <ul>
+            <li>✔ 10% Niacinamide for acne control</li>
+            <li>✔ Reduces oil & visible pores</li>
+            <li>✔ Strengthens skin barrier</li>
+            <li>✔ Fragrance & paraben free</li>
+            <li>✔ Ideal for oily & acne-prone skin</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/gektek.jpg" alt="GELTEK Brightening Skin Serum ">
+    </div>
+
+    <div class="card-body">
+      <h3>GELTEK Brightening Skin Serum </h3>
+      <p>
+        Reduces Pigment Spots, Wrinkles & Fine Lines | Evens Skin Tone & Boosts Radiance | Anti-Ageing Face Serum for Men & Women | 30ml
+
+      </p>
+
+      <a href="https://amzn.to/45iPHyF" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a> 
+      <div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup">
+<ul>
+  <li>Reduces the appearance of post-acne marks and helps reveal brighter skin</li>
+  <li>New-age CeraVe Resurfacing Retinol Serum for spot correction and even tone</li>
+  <li>Enriched with 0.01% salicylic acid for gentle exfoliation</li>
+  <li>Combines exfoliation, brightening, and correction in one formula</li>
+  <li>Dermatologically tested retinol serum</li>
+  <li>Promotes a more even skin tone</li>
+  <li>Suitable for sensitive, blemish-prone, acne-prone, combination, and oily skin</li>
+</ul>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+  <!-- PRODUCT 3 -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/dermaplus.jpg" alt="The Derma Co 10% Niacinamide Serum with 2% Zinc">
+    </div>
+
+    <div class="card-body">
+      <h3>The Derma Co 10% Niacinamide Serum with 2% Zinc</h3>
+      <p> Powered by Deep Penetration Formula™ | Fades Acne Marks, Controls Oil & Reduces Dark Spots | 30 ml
+</p>
+      <a href="https://amzn.to/4jNcKI0" class="buy-btn">View on Amazon (Best Deal)</a>
+      <div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup">
+    <ul>
+  <li>✔ Upgraded 10% Niacinamide formula helps fade acne marks & scars</li>
+  <li>✔ Visibly refines skin texture & corrects uneven tone</li>
+  <li>✔ Controls oil production with Niacinamide & Zinc PCA</li>
+  <li>✔ Tightens & minimizes the look of large pores</li>
+  <li>✔ Calms inflammation for smoother-looking skin</li>
+  <li>✔ Balanced formula suitable for all skin types</li>
+</ul>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+
+  <!-- 4 DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/asayaadvanced.jpg" alt="Asaya Advanced Spot Pigmentation Face Serum ">
+    </div>
+
+    <div class="card-body">
+      <h3>Asaya Advanced Spot Pigmentation Face Serum </h3>
+      <p>
+       Asaya Advanced Spot Pigmentation Face Serum | Reduces Dark Spots, Melasma, Acne Marks & Hyperpigmentation | MelaMe™ Complex, Niacinamide & Alpha Arbutin | Evens Skin Tone & Brightens Dull Skin | Lightweight & Fast Absorbing | For Men & Women | Oily, Dry & Sensitive Skin - 30ml
+
+      </p>
+
+      <a href="https://amzn.to/3YPBLsd" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+      <div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup"><ul>
+  <li>Advanced depigmentation formula with patented <strong>MelaMe Complex</strong> that helps reduce dark spots, melasma, and hyperpigmentation.</li>
+
+  <li>Targets multiple pigmentation concerns including acne marks, scars, blemishes, and post-inflammatory hyperpigmentation.</li>
+
+  <li>Enriched with <strong>5% Niacinamide</strong> and <strong>2% Alpha Arbutin</strong> to visibly brighten skin and promote an even tone.</li>
+
+  <li>Helps prevent the formation of new dark spots by controlling excess melanin production.</li>
+
+  <li>Non-toxic, non-peeling formula that corrects pigmentation without damaging the skin barrier.</li>
+
+  <li>Suitable for both men and women; safe for regular use when followed with sunscreen.</li>
+</ul>
+
+
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- 5 DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/garnier.jpg" alt=" Garnier Vitamin C+ Face Serum ">
+    </div>
+
+    <div class="card-body">
+      <h3> Garnier Vitamin C+ Face Serum </h3>
+      <p>
+      Garnier Vitamin C+ Face Serum for Skin Brightening & Anti-Dark Spots|100X Stronger than Vit C |2% Niacinamide 0.5% Salicylic Acid/BHA |Suitable for Oily, Dry, Sensitive Skin |For Men & Women 30ml
+
+      </p>
+
+      <a href="https://amzn.to/4r7XZC0" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+      <div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup">
+    <ul>
+  <li>Lightweight face serum suitable for all skin types.</li>
+
+  <li>Helps instantly revive dull-looking skin and visibly reduce dark spots with regular use.</li>
+
+  <li>Enriched with lemon extracts and <strong>30× Vitamin C</strong> compared to Garnier Bright Complete face creams.</li>
+
+  <li>Boosts skin brightness and promotes a more even-looking complexion.</li>
+
+  <li>Easy to use daily serum for face and neck; absorbs quickly without heaviness.</li>
+
+  <li>Trusted Garnier formulation in a convenient 30 ml size.</li>
+</ul>
+
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!--6 DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/derma2%.jpg" alt="The Derma Co 2% Salicylic Acid Face Serum ">
+    </div>
+
+    <div class="card-body">
+      <h3>The Derma Co 2% Salicylic Acid Face Serum </h3>
+      <p>
+       The Derma Co 2% Salicylic Acid Face Serum | Reduces acne & blackheads | Tightens pores | Exfoliates & soothes inflammation | 30 ml
+
+      </p>
+
+      <a href="https://amzn.to/3LnCKNm" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+      <div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup">
+    <ul>
+  <li>Powered with <strong>2% Salicylic Acid</strong> to help reduce acne, blackheads, and clogged pores.</li>
+
+  <li>Deep-penetration formula works at the root to unclog pores and control breakouts.</li>
+
+  <li>Helps tighten and minimise the appearance of pores for smoother-looking skin.</li>
+
+  <li>Exfoliates gently to remove dead skin cells and improve skin texture.</li>
+
+  <li>Infused with <strong>Witch Hazel</strong> to help soothe inflammation and calm irritated skin.</li>
+
+  <li>Ideal for acne-prone skin with active breakouts, blackheads, and excess oil.</li>
+</ul>
+
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!--7 DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+     <img src="images/10%nmide.jpg" alt="10% Niacinamide Serum For Oily Skin Face Serum ">
+    </div>
+
+    <div class="card-body">
+      <h3>10% Niacinamide Serum For Oily Skin Face Serum </h3>
+      <p>
+        10% Niacinamide Serum For Oily Skin Face Serum 30 Ml Helps Minimize Pores Brighten Dull Skin And Support Clear Looking Skin 30ml (Pack of 1) (PACK OF 1) (PACK OF 01)
+
+      </p>
+
+      <a href="https://amzn.to/4r3tyg0" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+      <div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup">
+    <ul>
+  <li>10% Niacinamide serum that helps improve uneven skin texture and supports clearer-looking skin.</li>
+
+  <li>Helps control excess oil and promotes a fresh, shine-free look throughout the day.</li>
+
+  <li>Minimises the appearance of enlarged pores and improves overall skin smoothness.</li>
+
+  <li>Supports brighter, more even-looking skin with regular use.</li>
+
+  <li>Helps reduce the appearance of dark spots caused by daily exposure and environmental stress.</li>
+
+  <li>Lightweight, fast-absorbing formula suitable for daily use on oily skin without clogging pores.</li>
+</ul>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!--8 DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/pilgrims.jpg"  alt=" Pilgrim 10% Vitamin C Serum 30ml ">
+    </div>
+
+    <div class="card-body">
+      <h3> Pilgrim 10% Vitamin C Serum 30ml </h3>
+      <p>
+       Pilgrim 10% Vitamin C Serum 30ml for Glowing Skin|With 5% Niacinamide, Hyaluronic & Glycolic Acid|Fades Dark Spots, Pigmentation|For All, Oily, Combination, Normal Skin |Beginner Friendly - Men, Women
+
+      </p>
+
+      <a href="https://amzn.to/4qxVlpe" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+      <div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup">
+    <ul>
+  <li>Formulated with <strong>10% Vitamin C</strong> and <strong>5% Niacinamide</strong> to support brighter, glowing-looking skin.</li>
+
+  <li>Helps reduce the appearance of dark spots and hyperpigmentation with consistent use.</li>
+
+  <li>Works to even out skin tone by fading the look of discoloration.</li>
+
+  <li>Beginner-friendly serum suitable for those new to Vitamin C.</li>
+
+  <li>Lightweight formula that absorbs easily and fits well into a daily skincare routine.</li>
+</ul>
+
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!--9 DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/pilgrims10%nmaide.jpg" alt=" Pilgrim 10% Niacinamide Serum 30ml For Acne Marks">
+    </div>
+
+    <div class="card-body">
+      <h3> Pilgrim 10% Niacinamide Serum 30ml For Acne Marks</h3>
+      <p>
+       Pilgrim 10% Niacinamide Serum 30ml For Acne Marks|With 1% Zinc PCA, Salicylic & Hyaluronic Acid|Niacinamide Serum For Oily Skin, Acne-Prone, Combination, Normal Skin|Oil Control, Anti-Acne|Women & Men
+
+      </p>
+
+      <a href="https://amzn.to/3LPR8hg" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+      <div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup">
+    <ul>
+  <li>Formulated with <strong>10% Niacinamide</strong> and <strong>1% Zinc PCA</strong> to help fade acne marks and dark spots.</li>
+
+  <li>Infused with <strong>Korean White Lotus</strong> to support brighter-looking skin and a more even tone.</li>
+
+  <li>Helps control excess oil and reduce shine, making it suitable for oily and acne-prone skin.</li>
+
+  <li>Supports clearer-looking skin with regular use.</li>
+
+  <li>Lightweight serum that fits easily into a daily skincare routine.</li>
+</ul>
+
+
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!--10 DUPLICATE CARD – COPY PASTE FOR REST -->
+  <div class="card">
+    <div class="product-img">
+      <img src="images/pilgrimkorean.jpg" alt="PILGRIM Korean 0.5% Retinol & 1% Hyaluronic Acid">
+    </div>
+
+    <div class="card-body">
+      <h3>PILGRIM Korean 0.5% Retinol & 1% Hyaluronic Acid</h3>
+      <p>
+       PILGRIM Korean 0.5% Retinol & 1% Hyaluronic Acid Lift & Firm Anti Aging Serum | Retinol serum for face| Reduce Fine Lines & Wrinkles|For Men & Women |All Skin Types|30ml
+
+      </p>
+
+      <a href="https://amzn.to/45ohxtk" class="buy-btn">
+        View on Amazon (Best Deal)
+      </a>
+      <div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup">
+    <ul>
+  <li>Retinol-based anti-aging serum that helps reduce visible signs of aging and revive dull, tired-looking skin.</li>
+
+  <li>Enriched with <strong>Hyaluronic Acid</strong> to support hydration, plumpness, and a firmer-looking appearance.</li>
+
+  <li>Infused with <strong>Pomegranate extract</strong> to help improve skin texture and reduce the look of fine lines and wrinkles.</li>
+
+  <li>Suitable for all skin types and can be included in anti-aging routines from the early twenties onward.</li>
+
+  <li>Dermatologically tested formula crafted with natural ingredients and free from parabens, sulphates, and mineral oils.</li>
+
+  <li>Cruelty-free and developed following clean Korean skincare principles.</li>
+</ul>
+
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+
+</div>
+
+<footer>
+<p>GlowBeauty © 2025 | Honest Beauty Reviews & Buying Guide</p>
+</footer>
+
+</body>
+</html>

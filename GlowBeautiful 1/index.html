@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GlowBeauty – Honest Beauty Reviews & Buying Guide</title>
+
+<meta name="description" content="GlowBeauty helps you choose the right beauty products through honest reviews and comparisons.">
+<meta name="robots" content="index, follow">
+
+<style>
+:root{
+--pink:#ff4d6d;
+--dark:#c9184a;
+--bg:#fff0f3;
+--text:#333;
+--white:#fff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif;}
+body{background:var(--bg);color:var(--text);}
+
+/* HEADER */
+header{
+background:#fff;
+padding:15px 5%;
+display:flex;
+align-items:center;
+gap:25px;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+/* LOGO */
+.logo{
+font-size:26px;
+font-weight:700;
+color:var(--pink);
+}
+
+/* SEARCH */
+.search-mini{
+display:flex;
+gap:6px;
+}
+
+.search-mini input{
+width:190px;
+padding:7px 12px;
+border-radius:20px;
+border:1px solid #ddd;
+font-size:13px;
+}
+
+.search-mini button{
+padding:7px 14px;
+border-radius:20px;
+border:none;
+background:var(--pink);
+color:#fff;
+font-size:13px;
+cursor:pointer;
+}
+
+/* NAV */
+nav{
+margin-left:auto;
+}
+
+nav ul{list-style:none;display:flex;gap:25px;}
+nav ul li{position:relative;}
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+padding:6px 10px;
+border-radius:6px;
+}
+
+nav a:hover{
+background:var(--bg);
+}
+
+/* DROPDOWN */
+nav ul li:hover ul{display:block;}
+
+nav ul ul{
+  display:none;
+  position:absolute;
+  top:100%;   
+  left:0;
+  background:#fff;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,.15);
+  min-width:190px;
+  padding:8px;
+  z-index:999;
+}
+nav ul ul li{
+margin-bottom:6px;
+}
+
+nav ul ul li a{
+display:block;
+background:var(--bg);
+padding:8px 12px;
+border-radius:8px;
+font-size:14px;
+}
+
+nav ul ul li a:hover{
+background:var(--pink);
+color:#fff;
+}
+
+/* HERO */
+.hero{
+padding:70px 5%;
+text-align:center;
+background:linear-gradient(rgba(255,77,109,.85),rgba(255,77,109,.85)),
+url('https://images.unsplash.com/photo-1596462502278-27bfdc4033c8') center/cover;
+color:#fff;
+}
+
+.hero h1{font-size:38px;margin-bottom:10px;}
+.hero p{font-size:18px;max-width:720px;margin:auto;}
+
+.notice{
+margin-top:18px;
+background:#fff;
+color:#333;
+display:inline-block;
+padding:10px 18px;
+border-radius:20px;
+font-size:14px;
+}
+
+/* PRODUCTS */
+.container{padding:50px 5%;}
+
+.section-title{
+text-align:center;
+color:var(--dark);
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+/* CARD */
+.card{
+background:#fff;
+border-radius:18px;
+padding:25px 20px 30px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+/* IMAGE CONTAINER */
+.product-img{
+height:320px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:15px;
+}
+
+/* PRODUCT IMAGE – FULL & UNCUT */
+.product-img img{
+max-height:100%;
+max-width:100%;
+width:auto;
+height:auto;
+object-fit:contain;   /* 🔥 YAHI MAIN FIX HAI */
+background:transparent;
+border:none;
+box-shadow:none;
+filter:drop-shadow(0 12px 20px rgba(0,0,0,.15));
+}
+
+
+
+
+
+.card-body{padding:20px;}
+
+.card-body h3{
+margin-bottom:8px;
+/* 🔴 PRODUCT NAME */
+}
+
+.card-body p{font-size:14px;margin-bottom:8px;}
+
+.buy-btn{
+display:inline-block;
+margin-top:12px;
+background:var(--pink);
+color:#fff;
+padding:10px 22px;
+border-radius:25px;
+text-decoration:none;
+font-weight:600;
+}
+
+.buy-btn:hover{background:var(--dark);}
+
+.disclaimer{
+margin-top:10px;
+font-size:12px;
+color:#666;
+}
+/* HERO SIDE IMAGES (ONLY ADDITION) */
+.hero{
+position:relative;
+overflow:hidden;
+}
+
+.hero-side{
+position:absolute;
+bottom:0;
+width:230px;
+}
+
+.hero-side.left{
+left:0%;
+}
+
+.hero-side.right{
+right:0%;
+}
+
+.hero-side img{
+width:100%;
+height:auto;
+border-radius:20px;
+}
+
+/* Mobile par images hide */
+@media(max-width:900px){
+.hero-side{
+display:none;
+}
+}
+.why-wrap{
+position:relative;
+display:inline-block;
+margin-top:12px;
+}
+
+.why-trigger{
+font-size:13px;
+color:var(--pink);
+font-weight:600;
+cursor:pointer;
+border-bottom:1px dashed var(--pink);
+}
+
+.why-popup{
+position:absolute;
+bottom:130%;
+left:0;
+background:#fff;
+width:240px;
+padding:14px 16px;
+border-radius:14px;
+box-shadow:0 12px 30px rgba(0,0,0,.18);
+opacity:0;
+visibility:hidden;
+transform:translateY(10px);
+transition:.25s ease;
+z-index:20;
+}
+
+.why-popup ul{
+padding-left:16px;
+font-size:13px;
+color:#333;
+}
+
+.why-popup li{
+margin-bottom:6px;
+}
+
+/* Hover for desktop */
+.why-wrap:hover .why-popup{
+opacity:1;
+visibility:visible;
+transform:translateY(0);
+}
+
+
+
+/* FOOTER */
+footer{
+background:#333;
+color:#fff;
+text-align:center;
+padding:30px;
+margin-top:60px;
+font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">GlowBeauty</div>
+
+<div class="search-mini">
+  <input type="text" placeholder="Search products…">
+  <button>Go</button>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">Categories ▾</a>
+<ul>
+<li><a href="skincare.html"> Top 10 Skincare 2026</a></li>
+<li><a href="haircare.html">Top 10 Haircare 2026</a></li>
+<li><a href="makeup.html">Makeup</a></li>
+<li><a href="Personal- Care.html">Personal Care</a></li>
+</ul>
+</li>
+
+<li><a href="review.html">Reviews</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<!-- LEFT SIDE IMAGE (Girl) -->
+<div class="hero-side left">
+  <img src="images/girlglow.png">
+</div>
+
+<h1>Helping You Choose the Right Beauty Products</h1>
+<p>We research, compare and review products so you can buy with confidence.</p>
+
+<div class="notice">
+✔ Honest Reviews • ✔ Research Based • ✔ Trusted Stores
+</div>
+
+<!-- RIGHT SIDE IMAGE (Boy) -->
+<div class="hero-side right">
+  <img src="images/boyglow.png">
+</div>
+
+</section>
+
+
+<main class="container">
+
+<h2 class="section-title">Featured Beauty Products</h2>
+
+<div class="grid">
+
+  <!-- PRODUCT 1 -->
+  <div class="card">
+    <div class="product-img">
+<img src="images/minimalistoil.jpg" alt="Minimalist Oil Control & Anti-Acne 10%">
+    </div>
+
+    <div class="card-body">
+      <h3>Minimalist Oil Control & Anti-Acne 10% </h3>
+      <p>Minimalist Oil Control & Anti-Acne 10% Niacinamide Face Serum with Zinc | Skin Clarifying,Blemishes Removing & Pore Care for All Skin Types | 10 ml (Pack of 1)</p>
+      <a href="https://amzn.to/4qpxXKg" class="buy-btn">View on Amazon (Best Deal)</a>
+<div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup">
+    <ul>
+  <li>✔ Clinically proven 10% Niacinamide helps reduce acne marks in as little as 2 weeks</li>
+  <li>✔ Balances oil production & minimizes visible pores</li>
+  <li>✔ Strengthens skin barrier & protects from pollution damage</li>
+  <li>✔ Anti-acne formula with Niacinamide + Zinc</li>
+  <li>✔ Soothing Aloe Vera reduces redness & irritation</li>
+  <li>✔ Clean beauty formula: no fragrance, silicones, sulfates or parabens</li>
+  <li>✔ Non-comedogenic, oil-free & hypoallergenic</li>
+  <li>✔ Ideal for oily & acne-prone skin types</li>
+</ul>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- PRODUCT 2 -->
+  <div class="card">
+    <div class="product-img">
+<img src="images/kerastase.jpg" alt="Kerastase Genesis Anti Hair Fall Serum 90ml">
+    </div>
+
+    <div class="card-body">
+      <h3>Kérastase Genesis Anti-Hair Fall Serum 90ml</h3>
+      <p>| Hair Serum for Hair Fall Control | Strengthens Hair | Infused with Aminexil 1.5%, Ginger Root & Caffeine
+</p>
+      <a href="https://amzn.to/4qxzEWb" class="buy-btn">View on Amazon (Best Deal)</a>
+   <div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup">
+   <ul>
+  <li>✔ Clinically proven dual-action anti-hair fall serum</li>
+  <li>✔ Aminexil 1.5% strengthens hair at the root & reduces breakage</li>
+  <li>✔ Enriched with Ginger Root & Caffeine for scalp stimulation</li>
+  <li>✔ Resveratrol helps protect hair from aging effects</li>
+  <li>✔ Non-greasy, fast-absorbing & silicone-free formula</li>
+  <li>✔ Suitable for daily scalp application</li>
+  <li>✔ Helps achieve visibly stronger & fuller-looking hair</li>
+  <li>✔ Proven to give up to 84% stronger hair**</li>
+</ul>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+<div class="grid">
+
+  <!-- PRODUCT 3 -->
+  <div class="card">
+    <div class="product-img">
+<img src="images/dermaplus.jpg" alt="The Derma Co 10% Niacinamide Serum with 2% Zinc">
+    </div>
+
+    <div class="card-body">
+      <h3>The Derma Co 10% Niacinamide Serum with 2% Zinc</h3>
+      <p> Powered by Deep Penetration Formula™ | Fades Acne Marks, Controls Oil & Reduces Dark Spots | 30 ml
+</p>
+      <a href="https://amzn.to/4jNcKI0" class="buy-btn">View on Amazon (Best Deal)</a>
+      <div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup">
+    <ul>
+  <li>✔ Upgraded 10% Niacinamide formula helps fade acne marks & scars</li>
+  <li>✔ Visibly refines skin texture & corrects uneven tone</li>
+  <li>✔ Controls oil production with Niacinamide & Zinc PCA</li>
+  <li>✔ Tightens & minimizes the look of large pores</li>
+  <li>✔ Calms inflammation for smoother-looking skin</li>
+  <li>✔ Balanced formula suitable for all skin types</li>
+</ul>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- PRODUCT 4 -->
+  <div class="card">
+    <div class="product-img">
+<img src="images/minimalisthairserum.jpg" alt="Minimalist Hair Growth Serum with 3% Redensyl">
+    </div>
+
+    <div class="card-body">
+      <h3>Minimalist Hair Growth Serum With 3% Redensyl</h3>
+      <p>Minimalist Hair Growth Serum With 3% Redensyl, 3% Anagain, 3% Procapil, 5% Capixyl & 4% Baicapil 18% Hair Growth Actives | For Hair Fall Control | For Men & Women | 30 ml
+
+</p>
+      <a href="https://amzn.to/4b0CHRP" class="buy-btn">View on Amazon (Best Deal)</a>
+<div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup">
+<ul>
+  <li>✔ Advanced multi-functional hair growth serum with 5 clinically backed actives</li>
+  <li>✔ Supports hair regrowth & visibly reduces hair fall</li>
+  <li>✔ Peptide technology helps improve hair thickness & strength</li>
+  <li>✔ Botanical extracts boost scalp health & serum performance</li>
+  <li>✔ Gentle yet effective formula for everyday use</li>
+  <li>✔ Works on oily, dry, normal & combination hair types</li>
+</ul>
+
+  </div>
+</div>
+    </div>
+  </div>
+
+</div><div class="grid">
+
+  <!-- PRODUCT 5 -->
+  <div class="card">
+    <div class="product-img">
+<img src="images/cerav.jpg" alt="CeraVe Resurfacing Retinol Serum">
+    </div>
+
+    <div class="card-body">
+      <h3>CeraVe Resurfacing Retinol Serum </h3>
+      <p>CeraVe Resurfacing Retinol Serum For Blemish-Prone Skin, Reduces Post Acne Marks & Pores, Formulated with Licorice Root Extract & Niacinamide, Non-Comedogenic, 30ml
+</p>
+      <a href="https://amzn.to/3YKSmNR" class="buy-btn">View on Amazon (Best Deal)</a>
+      <div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup">
+    <ul>
+  <li>✔ Helps reduce post-acne marks & dark spots</li>
+  <li>✔ Enriched with 0.01% salicylic acid for gentle exfoliation</li>
+  <li>✔ Improves skin tone and texture</li>
+  <li>✔ Dermatologically tested & non-irritating</li>
+  <li>✔ Suitable for sensitive, acne-prone, oily & combination skin</li>
+</ul>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- PRODUCT 6 -->
+  <div class="card">
+    <div class="product-img">
+<img src="images/frizzyhair.jpg" alt="Minimalist Hair Serum for Dry Frizzy Hair">    </div>
+
+    <div class="card-body">
+      <h3>Minimalist Hair Serum for Dry Frizzy Hair</h3>
+      <p>Minimalist Hair Serum for Dry Frizzy Hair with SPF 30, Keratin, Argan Oil & Ceramides| Heat Protection Serum, Smoothens & Protects From UV | Lightweight | Leave In For Women & Men | 50 ml
+
+</p>
+      <a href="https://amzn.to/45MQbx3" class="buy-btn">View on Amazon (Best Deal)</a>
+<div class="why-wrap">
+  <span class="why-trigger">Why we recommend?</span>
+
+  <div class="why-popup">
+   <ul>
+  <li>✔ Repairs and smoothens damaged, frizzy hair</li>
+  <li>✔ Enriched with Ceramide, Keratin & Argan Oil</li>
+  <li>✔ SPF 30 protects hair from UV damage</li>
+  <li>✔ High-purity ingredients sourced globally (Japan-grade Keratin)</li>
+  <li>✔ Lightweight formula for all hair types</li>
+</ul>
+
+  </div>
+</div>
+    </div>
+  </div>
+
+</div>
+
+</main>
+
+<footer>
+<p>GlowBeauty © 2025 | Honest Beauty Reviews & Buying Guide</p>
+</footer>
+
+</body>
+</html>
